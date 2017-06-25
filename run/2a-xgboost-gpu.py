@@ -11,7 +11,7 @@ dtest = xgb.DMatrix('test.libsvm')
 #params = {'max_depth':10, 'eta':0.1, 'objective':'binary:logistic', 'updater':'grow_colmaker'}
 #params = {'max_depth':10, 'eta':0.1, 'objective':'binary:logistic', 'updater':'grow_fast_histmaker'}
 #params = {'max_depth':10, 'eta':0.1, 'objective':'binary:logistic', 'updater':'grow_gpu'}
-params = {'max_depth':10, 'eta':0.1, 'objective':'binary:logistic', 'updater':'grow_gpu_hist'}
+params = {'max_depth':10, 'eta':0.1, 'objective':'binary:logistic', 'updater':'grow_gpu', 'tree_method':'exact'}
 
 num_round = 100
 
